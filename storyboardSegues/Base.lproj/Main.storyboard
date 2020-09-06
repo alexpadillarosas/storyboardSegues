@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="4mD-xv-AS3">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Yellow View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController title="Yellow View Controller" id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g2L-z1-jtM">
+                                <rect key="frame" x="126" y="431" width="162" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Go to Teal VC"/>
+                                <connections>
+                                    <segue destination="60H-LQ-yFV" kind="show" identifier="fromYellow" id="uX2-oE-YWp"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="w6u-KZ-TzZ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1173.913043478261" y="-27.455357142857142"/>
+        </scene>
+        <!--Teal View Controller-->
+        <scene sceneID="cv0-rk-ImT">
+            <objects>
+                <viewController title="Teal View Controller" id="60H-LQ-yFV" customClass="TealViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="T5d-h1-JS1">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wCm-mc-DpI">
+                                <rect key="frame" x="149" y="374" width="114" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Go to orange VC"/>
+                                <connections>
+                                    <segue destination="lxj-KA-4wg" kind="show" identifier="fromTeal" id="b0b-Bu-VPf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6E0-4h-h7S">
+                                <rect key="frame" x="161" y="482" width="92" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Go to Red VC"/>
+                                <connections>
+                                    <segue destination="Yth-tf-JxW" kind="show" identifier="fromTeal" id="PkC-zt-ycp"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="lnp-5P-yyR"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="gdh-ZY-TH6"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="314-Mm-wTY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2000.0000000000002" y="-27.455357142857142"/>
+        </scene>
+        <!--Orange View Controller-->
+        <scene sceneID="Cs4-em-mal">
+            <objects>
+                <viewController title="Orange View Controller" id="lxj-KA-4wg" customClass="OrangeViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="DrV-tR-Jgk">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mjn-gJ-acH">
+                                <rect key="frame" x="134" y="433" width="146" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Go back to Yellow VC"/>
+                                <connections>
+                                    <segue destination="3mR-D1-wQG" kind="unwind" identifier="unmwindFromOrangeVC" unwindAction="unwindToYellowVC:" id="Dwc-bw-AzQ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="dx0-DZ-FfB"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="aPd-lG-MQ1"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OgA-Gx-7jc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="3mR-D1-wQG" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="3090" y="-440"/>
+        </scene>
+        <!--Red View Controller-->
+        <scene sceneID="Mje-wv-eAQ">
+            <objects>
+                <viewController title="Red View Controller" id="Yth-tf-JxW" customClass="RedViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="FuX-i0-c3Z">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d6A-Tr-kq0">
+                                <rect key="frame" x="134" y="433" width="146" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Go back to Yellow VC"/>
+                                <connections>
+                                    <segue destination="uRw-XJ-NbX" kind="unwind" identifier="unwindFromRedVC" unwindAction="unwindToYellowVC:" id="zco-Es-hRQ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IZg-Th-da6">
+                                <rect key="frame" x="69" y="501" width="277" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Do Something and Go back to Yellow VC"/>
+                                <connections>
+                                    <action selector="doSomethingAndGoBackToYellowVC:" destination="Yth-tf-JxW" eventType="touchUpInside" id="w63-GR-aU5"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="8lk-Ww-Co8"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="L1R-gs-Lko"/>
+                    <connections>
+                        <outlet property="doSomethingAndGoBackToYellowVC" destination="IZg-Th-da6" id="LPc-IR-SAa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fLp-58-xba" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="uRw-XJ-NbX" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="3090" y="271"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="lkR-GJ-TKG">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="4mD-xv-AS3" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Fti-Ir-jmM">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="9Jm-4J-e0r"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YpQ-zf-RYS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="263.768115942029" y="-27.455357142857142"/>
+        </scene>
+    </scenes>
+</document>
