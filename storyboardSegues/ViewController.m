@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "TealViewController.h"
 #import "RedViewController.h"
+#import "OrangeViewController.h"
 
 @interface ViewController ()
 
@@ -32,9 +33,15 @@
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
-    if( [[segue identifier] isEqualToString:@"fromYellow"] ){
+//    if( [[segue identifier] isEqualToString:@"fromYellow"] ){
+//        TealViewController* tealVC = [ segue destinationViewController ];
+//        tealVC.contact = [self contact];
+//    }
+    
+    UIViewController *destinationViewController = [segue destinationViewController];
+    if([destinationViewController isKindOfClass:[OrangeViewController class] ]){
         TealViewController* tealVC = [ segue destinationViewController ];
-        tealVC.contact = [self contact];
+        [tealVC setContact:[self contact]];
     }
 }
 
@@ -44,14 +51,23 @@
     
     //responds to selector indicates if the class responds to an existing method called in this case: myMethodInRedVC, so we make sure the method exists in that class then we can call it.
     //do not forget to import RedViewController.h in this class
-    if([sourceViewController respondsToSelector:@selector(myMethodInRedVC)]){
+//    if([sourceViewController respondsToSelector:@selector(myMethodInRedVC)]){
+//        NSLog(@"comming back from RedViewController");
+//    }
+//
+//    if( [[unwindSegue identifier] isEqualToString:@"unwindFromRedVC"] ){
+//        NSLog(@"comming back from %@ ", [unwindSegue identifier]);
+//    }
+//     NSLog(@"coming back from: %@", [unwindSegue identifier]  );
+    
+    //This is the best way to know from which ViewController we are comming from:
+    
+    if([sourceViewController isKindOfClass:[OrangeViewController class]]){
+        NSLog(@"comming back from OrangeViewController");
+    }
+    if([sourceViewController isKindOfClass: [RedViewController class]]){
         NSLog(@"comming back from RedViewController");
     }
-    
-    if( [[unwindSegue identifier] isEqualToString:@"unwindFromRedVC"] ){
-        NSLog(@"comming back from %@ ", [unwindSegue identifier]);
-    }
-//     NSLog(@"coming back from: %@", [unwindSegue identifier]  );
 }
 
 @end
